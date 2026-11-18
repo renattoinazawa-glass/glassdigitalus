@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação das fontes Orbitron e Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Glass Digital</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link do arquivo CSS local -->
+    <link rel="stylesheet" href="styles.css">
+
+   
+    <style>
+        body {
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body class="bg-[#101010]">
+
+<!-- HEADER -->
+<header id="header-termos" class="w-full bg-black/70 backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 flex items-center border-b border-gray-700 fixed top-0 z-50 transition-transform duration-300">
+        
+        
+        <div class="flex items-center gap-x-2 flex-shrink-0">
+            <a href="/" class="flex flex-col items-center">
+               
+                <img src="images/logoheader100.webp" alt="Glass Digital Logo" style="height: 64px;" class="md:h-[80px] w-auto object-contain" loading="eager">
+            </a>
+        </div>
+ 
+        <!-- Main nav -->
+        <nav class="flex-grow flex justify-end md:pr-8">
+            <ul class="flex gap-x-6 md:gap-x-10 text-white font-medium text-sm md:text-base" style="font-family: 'Montserrat', sans-serif;">
+                <li>
+                    <a href="index.html" class="hover:text-[#10e608] transition-colors duration-200">Home</a>
+                </li>
+                <li>
+                    <a href="policies.html" class="hover:text-[#10e608] transition-colors duration-200">Policy</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Header behavior script -->
+    <script>
+        let lastScrollTopTermos = 0;
+        const headerTermos = document.getElementById("header-termos");
+        const thresholdTermos = 50;
+
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTopTermos && currentScroll > thresholdTermos) {
+                headerTermos.classList.add("-translate-y-full");
+            } else {
+                headerTermos.classList.remove("-translate-y-full");
+            }
+            lastScrollTopTermos = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+    </script>
+
+    
+
+    <!-- Policy -->
+   
+    <main class="w-full pt-32 pb-24 px-6 md:px-12">
+        
+        <div class="max-w-4xl items mx-auto text-left text-[#EEEEEE]" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.6;">
+            
+            <h1 class="font-bold mb-8 text-[#00dd00]">Terms of use</h1>
+            
+            <p>
+                
+Last updated: 2026<br><br>
+
+Welcome to the Glass Digital website. By accessing and using this website, you agree to comply with and be bound by these Terms of Use. If you do not agree with any part of these terms, you should refrain from using this website.<br><br>
+
+<strong>1. Website Use</strong><br>
+The Glass Digital website serves informational and commercial purposes, aiming to showcase services and enable users to contact the business owner.<br><br>
+
+You agree to use this website in a lawful manner, complying with all applicable federal, state, and local laws and regulations.<br><br>
+
+<strong>2. Intellectual Property Rights</strong><br>
+All content on this website including text, graphics, logos, images, visual identity, and underlying code is the exclusive property of Glass Digital, unless otherwise noted.<br><br>
+
+Unauthorized reproduction, distribution, modification, or display of any website content without prior written consent is strictly prohibited.<br><br>
+
+<strong>3. Contact & Communications</strong><br>
+This website provides communication channels to allow users to reach out to Glass Digital.<br><br>
+
+By initiating contact, you consent to receive responses through the communication details you provide.<br><br>
+
+Submitting an inquiry or message does not create a binding legal contract or formal service agreement between the parties.<br><br>
+
+<strong>4. Limitation of Liability & Disclaimer of Warranties</strong><br>
+Glass Digital makes reasonable efforts to ensure the accuracy and reliability of the information on this website. However, the site is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind.<br><br>
+
+Your use of the information provided on this website is entirely at your own risk.<br><br>
+
+To the fullest extent permitted by law, Glass Digital shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to, use of, or inability to use this website.<br><br>
+
+<strong>5. Third-Party Links</strong><br>
+This website may contain links to third-party websites or services. Glass Digital does not endorse, monitor, or assume responsibility for the content, privacy policies, or practices of any third-party websites.<br><br>
+
+<strong>6. Privacy & Tracking Technologies</strong><br>
+Our processing of personal information and use of cookies or tracking tools is governed by our Privacy Policy.<br><br>
+
+We encourage you to review our Privacy Policy to understand how your data is collected and managed.<br><br>
+
+<strong>7. Modifications to Terms</strong><br>
+Glass Digital reserves the right to modify or update these Terms of Use at any time without prior notice.<br><br>
+
+Your continued use of the website following any changes constitutes acceptance of the updated terms. We recommend reviewing this document periodically.<br><br>
+
+<strong>8. Governing Law & Jurisdiction</strong><br>
+These Terms of Use are governed by and construed in accordance with the laws of the United States and applicable state privacy laws (including California consumer statutes where applicable), without regard to conflict of law principles.<br><br>
+
+<strong>9. Contact Information</strong><br>
+If you have any questions regarding these Terms of Use, please reach out through the contact options provided on the website.
+
+
+        </div>
+    </main>
+
+<!-- FOOTER  -->
+    <footer class="w-full bg-[#1a1a1a] py-12 relative overflow-hidden text-gray-300">
+        
+        <div class="max-w-[1920px] w-full mx-auto px-[20px] relative z-10 flex flex-col items-center justify-center min-h-[100px]">
+
+            
+            <div class="mb-10 md:mb-0 md:absolute md:left-[20px] md:top-1/2 md:-translate-y-1/2 flex flex-col items-center">
+                <a href="/" class="flex flex-col items-center">
+                    <img src="images/logoheader100.webp" alt="Glass Digital Logo Colorida" class="w-auto h-24">
+                </a>
+            </div>
+
+            
+            <div class="flex flex-col items-center text-center">
+                
+                <!-- Links  -->
+                <div class="flex flex-row items-center justify-center gap-[64px]" style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400;">
+                    
+                    <a href="/" class="hover:text-[#10e608] transition-colors duration-300">
+                        Home
+                    </a>
+                    <!-- Policy -->
+                    <a href="policies.html" class="hover:text-[#10e608] transition-colors duration-300">
+                        Privacy policy
+                    </a>
+                </div>
+
+                <!-- Copyright -->
+                <p class="mt-6 text-[#474747]" style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400;">
+                    2026 - Glass Digital - All rights reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
